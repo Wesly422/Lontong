@@ -1,0 +1,45 @@
+<!--RDF-->
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+       xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+          xmlns:foaf="http://xmlns.com/foaf/0.1/"
+          xmlns="http://www.Michael-Jackson.org/song#">
+        <foaf:Theme rdf:about="http://www.Michael-Jackson.org/song#Populer_Song_Michael_Jackson">
+          <foaf:Judul_Tema>Lagu Solo Populer Michael Jackson</foaf:Judul_Tema>
+          <foaf:Album>Album</foaf:Album>
+		  <foaf:Rilis>Rilis</foaf:Rilis>
+		  <foaf:Judul>Judul</foaf:Judul>
+        </foaf:Theme>
+      </rdf:RDF>
+
+<!--RDFS-->
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01-rdf-schema#"
+	xmlns:mj="http://www.Michael-Jackson.org/song#">
+	
+	<rdf:Description
+	rdf:about="http://www.Michael-Jackson.org/song#tema">
+		<mj:Judul_Tema>Lagu Solo Populer Michael Jackson</mj:Judul_Tema>
+	<rdf:type rdf:resource="http://www.Michael_Jackson.org/song#JudulTema"/>
+	</rdf:Description>
+	
+	<rdf:Description
+	rdf:about="http://www.Michael-Jackson.org/song#tema">
+		<mj:Album>Album</mj:Album>
+	<rdf:type rdf:resource="http://www.Michael_Jackson.org/song#Album"/>
+	</rdf:Description>
+	
+	<rdf:Description
+	rdf:about="http://www.Michael-Jackson.org/song#tema">
+		<mj:Rilis>Rilis</mj:Rilis>
+	<rdf:type rdf:resource="http://www.Michael_Jackson.org/song#Rilis"/>
+	</rdf:Description>
+	
+	<rdf:Description
+	rdf:about="http://www.Michael-Jackson.org/song#tema">
+		<mj:Judul>Judul</mj:Judul>
+	<rdf:type rdf:resource="http://www.Michael_Jackson.org/song#Judul"/>
+	</rdf:Description>
+</rdf:RDF>
