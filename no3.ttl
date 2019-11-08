@@ -1,0 +1,21 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+<http://www.Michael-Jackson.org/song#Populer_Song_Michael_Jackson>
+  a foaf:Theme ;
+  foaf:Judul_Tema "Lagu Solo Populer Michael Jackson" ;
+  foaf:Album "Album" ;
+  foaf:Rilis "Rilis" ;
+  foaf:Judul "Judul" .
+  
+  
+  @prefix ns0: <http://www.Michael-Jackson.org/song#> .
+
+<http://www.Michael-Jackson.org/song#tema>
+  ns0:Judul_Tema "Lagu Solo Populer Michael Jackson" ;
+  a <http://www.Michael_Jackson.org/song#JudulTema>, 
+  <http://www.Michael_Jackson.org/song#Album>, 
+  <http://www.Michael_Jackson.org/song#Rilis>, 
+  <http://www.Michael_Jackson.org/song#Judul> ;
+  ns0:Album "Album" ;
+  ns0:Rilis "Rilis" ;
+  ns0:Judul "Judul" .
